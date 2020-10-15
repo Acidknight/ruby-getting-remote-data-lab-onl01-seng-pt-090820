@@ -25,6 +25,6 @@ class GetRequester
 end
 
 people = GetRequester.new
-puts peopl.parse_json.uniq
+puts people.parse_json.uniq
   
 end
