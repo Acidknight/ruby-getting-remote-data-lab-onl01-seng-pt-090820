@@ -24,7 +24,7 @@ class GetRequester
   end
 end
 
-people = GetPrograms.new
-puts programs.program_school.uniq
+people = GetRequester.new
+puts peopl.parse_json.uniq
   
 end
