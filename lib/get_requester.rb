@@ -14,7 +14,7 @@ class GetRequester
   def get_response_body
     uri = URI.parse(URL)
     response = Net::HTTP.get_response(uri)
-    response.body
+    response.all
   end
   
   
@@ -22,7 +22,7 @@ class GetRequester
   def parse_json
   people = JSON.parse(self.get_response_body)
   people.collect do |people|
-    people["name" && "occupation"]  
+    people["people"]  
   end
 end
 
