@@ -23,5 +23,8 @@ class GetRequester
     people["people"]  
   end
 end
+
+people = GetPrograms.new
+puts programs.program_school.uniq
   
 end
