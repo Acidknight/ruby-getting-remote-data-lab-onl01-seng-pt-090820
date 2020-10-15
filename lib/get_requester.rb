@@ -22,10 +22,6 @@ class GetRequester
   people.collect do |people|
     people["name"]  
   end
-  occupation = JSON.parse(self.get_response_body)
-  occupation.collect do |occupation|
-    occupation["occupation"]  
-  end
 end
   
 end
