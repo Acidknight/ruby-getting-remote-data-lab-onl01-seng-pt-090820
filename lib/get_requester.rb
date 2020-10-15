@@ -17,6 +17,9 @@ class GetRequester
     response.body
   end
   
+  people = GetRequester.new
+puts people.parse_json.uniq
+  
   def parse_json
   people = JSON.parse(self.get_response_body)
   people.collect do |people|
@@ -24,7 +27,5 @@ class GetRequester
   end
 end
 
-people = GetRequester.new
-puts people.parse_json.uniq
   
 end
